@@ -1,0 +1,46 @@
+header {
+    background-color: #4CAF50;
+    position: fixed;
+    width: 10%;
+    top: 15px;
+    left: 20px;
+}
+
+header ul {
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+    display: inline-block;
+}
+
+header > ul > li > a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px 25px 15px 0px;
+}
+
+header ul li a:hover{
+    background-color: aliceblue;
+}
+/* Menu End*/
+
+#mainheading {
+    margin-left: 23%;
+    margin-right: 23%;
+    font-size: 50px;
+}
+header ul li a:focus{
+    background-color: green;
+}
+
+
+section {
+    left: 20px;
+    margin: 170px;
+    padding: 20px;
+}
+section p1{
+    left: 20px;
+    font-size: 100px;
+}
