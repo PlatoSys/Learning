@@ -1,7 +1,6 @@
 header {
     background-color: #4CAF50;
     position: fixed;
-
     top: 15px;
     left: 20px;
 }
@@ -11,6 +10,7 @@ header ul {
     padding: 0;
     list-style: none;
     display: inline-block;
+    text-align: center;
 }
 
 header > ul > li > a {
@@ -19,6 +19,7 @@ header > ul > li > a {
     display: inline-block;
     margin: 0px;
     padding: 25px 25px 15px 0px;
+    text-align: right;
 }
 
 header ul li a:hover{
@@ -27,3 +28,31 @@ header ul li a:hover{
 }
 
 /* Menu End*/
+#justtxt {
+    font-size: 50px;    
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.last {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+.last ul li {
+    float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.last ul li a {
+    margin-left: 555%;
+}
+  

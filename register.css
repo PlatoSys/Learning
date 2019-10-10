@@ -1,7 +1,6 @@
 header {
     background-color: #4CAF50;
     position: fixed;
-
     top: 15px;
     left: 20px;
 }
@@ -11,6 +10,7 @@ header ul {
     padding: 0;
     list-style: none;
     display: inline-block;
+    text-align: center;
 }
 
 header > ul > li > a {
@@ -19,6 +19,7 @@ header > ul > li > a {
     display: inline-block;
     margin: 0px;
     padding: 25px 25px 15px 0px;
+    text-align: right;
 }
 
 header ul li a:hover{
