@@ -27,22 +27,3 @@ header ul li a:hover{
 }
 
 /* Menu End*/
-#mainheading {
-    margin-left: 23%;
-    margin-right: 23%;
-    font-size: 50px;
-}
-header ul li a:focus{
-    background-color: green;
-}
-
-
-section {
-    left: 20px;
-    margin: 170px;
-    padding: 20px;
-}
-section p1{
-    left: 20px;
-    font-size: 100px;
-}

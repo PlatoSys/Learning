@@ -8,14 +8,22 @@
     <link rel="stylesheet" type="text/css" href="register.css">
 </head>
 <body>
+    <script>
+            function clickFunction() {
+                alert("I am an alert box!");
+                
+            }
+    </script>
+
     <header>
             <ul>
                 <li><a href="home.html"> Home</a></li>
                 <li><a href="register.html">Register </a></li>
-                <li><a href="contact"> Contact</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </header>
+
     <form action="action">
         <div class="register">
             <h1> Register Here</h1>
@@ -30,7 +38,10 @@
             <label for="password"> Password </label>
             <input type="password" placeholder="Input Password" name="password">
 
-            <button type="submit" class="submit"> Register </button>  
+            <button onclick="clickFunction()" type="submit" class="submit"> <a id="regButton" href="register.html"> Register </a></button>  
+
+
+
         </div>
         
     </form>
