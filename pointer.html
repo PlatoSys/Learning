@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="pointer.css">
 </head>
 <body>
+  <script src="pointer.js"></script>
     <header>
         <ul>
             <li><a href="home.html"> Home</a></li>
@@ -18,36 +19,15 @@
         </ul>
     </header>
 
-    <div id="nameinput">
-        <form action="/action_page.php">
-          <label for="fname"><b>First Name </b></label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-          <input type="submit" value="Submit" >
-        </form>
-      </div>
+    <script src="pointer.js"></script>
 
-    <button id="demo1" onclick="myFunction()">Slaaap Like</button>
-
-    <p id="demo2"> Your Gay Point <p id="demo"> </p> </p>
+   
+    <button id="demo1" onclick="myFunction()">Earn Gay Point</button>
+    <h1 class="ind">Your Gay Point is </h1>
+    <h1 id="demo" > </h1>
 
     
-    <script>
-    function myFunction() {
-      var x = document.getElementById("demo")
-      x.innerHTML = Math.floor((Math.random() * 100) + 1);
-    }
 
-    function nameFunction {
-        
-    }
-
-
-    if(document.getElementById('button').clicked == true)
-    {
-   alert("button was clicked");
-}
-    </script>
 
 </body>
 </html>

@@ -61,11 +61,12 @@ input[type=text], select {
 #demo {
     font-size: 100px;
     margin-left: 45%;
+    background-color:
 }
 
-#demo2 {
+.ind {
     font-size: 100px;
-    margin-left: 30%;
+    margin-left: 28%;
 }
 
 #nameinput {
