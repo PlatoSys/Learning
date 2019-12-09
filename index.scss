@@ -1,0 +1,46 @@
+$button-color: #212121;
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+ 
+
+.header {
+    padding: 0px;
+    margin:0px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header div {
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nav {
+    padding-right: 13%; 
+    padding-top: 1%;
+    li {
+    padding:0px;
+    margin:1%;
+    font-size: 18px;
+    display: inline-flex;
+    text-decoration: none;
+    flex-direction: column;
+    }
+    a {
+        color: $button-color;
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+
+button {
+    background-color:blue;
+}
