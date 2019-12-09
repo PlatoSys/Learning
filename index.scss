@@ -1,5 +1,9 @@
-$button-color: #212121;
+$button-color: hsl(0, 0%, 13%);
+$blue-color:  #2196f3;
 
+html {
+    scroll-behavior: smooth;
+  }
 
 * {
     padding: 0px;
@@ -7,40 +11,104 @@ $button-color: #212121;
 }
 
 
- 
+ .logo  {
+    padding-left: 200px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+ }
 
 .header {
+    background-color:white;
+    position: fixed;
+    width: 100%;
     padding: 0px;
     margin:0px;
     display: flex;
-    flex-wrap: nowrap;
-}
-
-.header div {
-    width: 50%;
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
+    justify-content: space-around; 
 }
 
 .nav {
-    padding-right: 13%; 
-    padding-top: 1%;
-    li {
-    padding:0px;
-    margin:1%;
-    font-size: 18px;
-    display: inline-flex;
-    text-decoration: none;
-    flex-direction: column;
+    ul {
+        padding-right: 180px;
+        padding-top: 10px;
+        li{
+            display: inline-flex;
+            justify-content: space-between;
+            
+            a{  
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                padding: 13px;
+                text-decoration: none;
+                color: $button-color;
+                &:hover{
+                    color: $blue-color;
+                    transition: color 0.2s;
+                }
+            }
+            
+
+        }
     }
-    a {
-        color: $button-color;
-        display: inline-block;
-        text-decoration: none;
+    
+}
+
+.container1 {
+
+    .main_container {
+        background-color:red;
+        padding-top:73px;
+        font-family: inherit;
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
-button {
-    background-color:blue;
+.button {
+    background-color: $blue-color;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        display: block;
+        position:fixed;
+    }
+    .logo {
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+    }
+    .nav {
+        ul{
+            padding: 0px;
+            li{ 
+            display: flex;
+            
+            justify-content: center;
+            }
+        }
+    }
+    .container1 {
+
+        .main_container {
+            background-color:blue;
+            padding-top:429px;
+            display: flex;
+            -webkit-box-direction: column;
+            justify-content: flex-start;
+        }
+
+    }
 }
