@@ -19,7 +19,8 @@ html {
  }
 
 .header {
-    background-color:white;
+
+    background-color: #f7f7f9;;
     position: fixed;
     width: 100%;
     padding: 0px;
@@ -53,16 +54,34 @@ html {
     
 }
 
-.container1 {
+.container1 , .container2{
+    background-color: #f7f7f9;
 
     .main_container {
-        background-color:red;
         padding-top:73px;
-        font-family: inherit;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        .content1 {
+            padding-top: 100px;
+            padding-left: 0px;
+
+        }
+        .content2{
+            padding-top:200px;
+            padding-left: 100px;
+            h {
+                font-size: 50px;
+                font-family: inherit;
+            }
+            p {
+                font-size: 20px;
+                font-family: inherit;
+            }
+        }
     }
+
 }
+
 
 .button {
     background-color: $blue-color;
@@ -77,13 +96,96 @@ html {
     cursor: pointer;
   }
 
+  .container2 {
+    background-color: white;
+}
 
+.fhead {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h {
+        text-align: center;
+        font-size: 50px;
+    }
+    p{
+        text-align:center;
+        font-size: 15px;
+    }
+
+}
+
+.features {
+    background-color: #f7f7f9;
+    display: flex;
+    justify-content: center;
+}
+.ffooter {
+    position: relative;
+    padding-top: 50px;
+    width: 1200px;
+    height: 700px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .feature {
+        position: relative;
+
+        border: 0.5px solid rgb(209, 209, 209);
+        margin: 0px;
+        width: 360px;
+        background-color: #FFF;
+        height: 285px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .icons{
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+
+        }
+        .inform {
+            h {
+                font-size: 25px;
+            }
+            p {
+                padding-top: 5px;
+                font-size: 18px;
+            }
+            padding-top: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.demo {
+    position: relative;
+    background-image: url("/Img/cup-hd-wallpaper-laptop-tea-100738.jpg");
+    background-attachment: fixed;
+    background-position: center; 
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.core {
+    font-size: 20px;
+}
 
 
 @media only screen and (max-width: 1200px) {
     .header {
         display: block;
-        position:fixed;
+        position: relative;
     }
     .logo {
         display: flex;
@@ -100,15 +202,57 @@ html {
             }
         }
     }
-    .container1 {
 
-        .main_container {
-            background-color:blue;
-            padding-top:429px;
-            display: flex;
-            -webkit-box-direction: column;
-            justify-content: flex-start;
+    .container1 , .container2{
+        .main_container{ 
+        display: block;
+        .content1 {
+            padding: 0px;
+            width: 100%;
+
+            img {
+                width: 360px;
+                height: 360px;
+            }
+        }
+        .content2 {
+            padding: 0px;
+            h {
+                text-align: center;
+            }
+            .button {
+                margin-left: 100px;
+            }
+        }
         }
 
     }
+
+    .features {
+
+        display: block;
+    }
+    .ffooter {
+        padding-top: 50px;
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        .feature {
+            border: 0.5px solid rgb(209, 209, 209);
+            margin: 20px;
+            background-color: #FFF;
+            height: 285px;
+        }
+    }
+    
+.demo {
+    display: block;
+    padding-top: 500px;
 }
+
+}
+
