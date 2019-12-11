@@ -20,7 +20,7 @@ html {
 
 .header {
 
-    background-color: #f7f7f9;;
+    background-color: #f7f7f9;
     position: fixed;
     width: 100%;
     padding: 0px;
@@ -132,8 +132,6 @@ html {
     justify-content: space-around;
 
     .feature {
-        position: relative;
-
         border: 0.5px solid rgb(209, 209, 209);
         margin: 0px;
         width: 360px;
@@ -148,7 +146,6 @@ html {
             border-radius: 50px;
             width: 100px;
             height: 100px;
-
         }
         .inform {
             h {
@@ -177,9 +174,56 @@ html {
     align-items: center;
 }
 
-.core {
+    
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h {
+            font-size: 50px;
+        }
+        p{
+            font-size: 18px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+
+
+.price {
     font-size: 20px;
+    color: $blue-color;
 }
+
+#Q {
+    padding: 10px;
+}
+.feedback {
+    display: flex;
+    .pics {
+        background-color :#f7f7f9;
+        border-radius: 50px;
+        align-items: center;
+        margin-left: 150px;
+    }
+    .feature {
+        margin-left: 20px;
+        margin-right: 20px;
+        div {
+            background-color: #f7f7f9;
+            padding: 40px;
+            font-size: 20px;
+        }
+        align-items: center;
+    }
+}
+
+#qwe {
+    display: flex;
+}
+
 
 
 @media only screen and (max-width: 1200px) {
@@ -252,7 +296,9 @@ html {
 .demo {
     display: block;
     padding-top: 500px;
+
 }
+
 
 }
 

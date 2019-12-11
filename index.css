@@ -157,7 +157,6 @@ html {
 }
 
 .ffooter .feature {
-  position: relative;
   border: 0.5px solid #d1d1d1;
   margin: 0px;
   width: 360px;
@@ -219,8 +218,74 @@ html {
           align-items: center;
 }
 
-.core {
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text h {
+  font-size: 50px;
+}
+
+.text p {
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.price {
   font-size: 20px;
+  color: #2196f3;
+}
+
+#Q {
+  padding: 10px;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback .pics {
+  background-color: #f7f7f9;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+}
+
+.feedback .feature {
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback .feature div {
+  background-color: #f7f7f9;
+  padding: 40px;
+  font-size: 20px;
+}
+
+#qwe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (max-width: 1200px) {
