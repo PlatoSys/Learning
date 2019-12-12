@@ -2,12 +2,22 @@ $button-color: hsl(0, 0%, 13%);
 $blue-color:  #2196f3;
 
 html {
+
     scroll-behavior: smooth;
+    
+
   }
 
 * {
     padding: 0px;
     margin: 0px;
+
+    font-family: 'Amaranth';
+    h {
+        font-family: 'Amaranth';
+    }
+    
+
 }
 
 
@@ -19,6 +29,10 @@ html {
  }
 
 .header {
+    -webkit-box-shadow: 7px 2px 21px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 7px 2px 21px 0px rgba(0,0,0,0.38);
+    box-shadow: 7px 2px 21px 0px rgba(0,0,0,0.38);
+    box-shadow: 1 ;
     z-index: 2;
     background-color: #f7f7f9;
     position: fixed;
@@ -27,6 +41,7 @@ html {
     margin:0px;
     display: flex;
     justify-content: space-around; 
+
 }
 
 .nav {
@@ -71,7 +86,7 @@ html {
             padding-left: 100px;
             h {
                 font-size: 50px;
-                font-family: inherit;
+                font-family: 'Alfa Slab One';
             }
             p {
                 font-size: 20px;
@@ -89,6 +104,7 @@ html {
     color: white;
     padding: 10px 19px;
     border-radius: 100px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -101,15 +117,17 @@ html {
 }
 
 .fhead {
+    background-color: #f7f7f9;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
     h {
+        font-family: 'Asul';
         text-align: center;
         font-size: 50px;
     }
     p{
+        font-family: 'Asul';
         text-align:center;
         font-size: 15px;
     }
@@ -122,6 +140,7 @@ html {
     justify-content: center;
 }
 .ffooter {
+    background-color: #f7f7f9;
     position: relative;
     padding-top: 50px;
     width: 1200px;
@@ -132,7 +151,7 @@ html {
     justify-content: space-around;
 
     .feature {
-        border: 0.5px solid rgb(209, 209, 209);
+        border: 0.5px solid white;
         margin: 0px;
         width: 360px;
         background-color: #FFF;
@@ -147,11 +166,19 @@ html {
             width: 100px;
             height: 100px;
         }
+        -webkit-box-shadow: 7px 2px 21px 0px rgba(0,0,0,0.38);
+        -moz-box-shadow: 7px 2px 21px 0px rgba(0,0,0,0.38);
+        box-shadow: 7px 2px 21px 0px rgba(0,0,0,0.38);
+        box-shadow: 1 ;
         .inform {
+
             h {
+                
                 font-size: 25px;
+                font-family: 'Asul';
             }
             p {
+ 
                 padding-top: 5px;
                 font-size: 18px;
             }
@@ -193,7 +220,6 @@ html {
     }
 
 
-
 .price {
     font-size: 20px;
     color: $blue-color;
@@ -202,6 +228,8 @@ html {
 #Q {
     padding: 10px;
 }
+
+
 .feedback {
     display: flex;
     .pics {
@@ -210,9 +238,17 @@ html {
         align-items: center;
         margin-left: 150px;
     }
+
+    margin: 50px;
     .feature {
+        img {
+            margin-top: 50px;
+        }
         margin-left: 20px;
         margin-right: 20px;
+        h {
+            font-size: 25px;
+        }
         div {
             background-color: #f7f7f9;
             padding: 40px;
@@ -221,6 +257,8 @@ html {
         align-items: center;
     }
 }
+
+
 
 #qwe {
     display: flex;
@@ -263,7 +301,7 @@ html {
       }
       
       input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #1b7fd1;
       }
       
 }
@@ -426,16 +464,21 @@ html {
         }
     }
     
+.cc1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
 .cc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-}
-
-.cc {
     width: 100%;
+    margin-left: 60px;
 }
 
 }
