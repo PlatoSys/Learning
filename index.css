@@ -18,6 +18,7 @@ html {
 }
 
 .header {
+  z-index: 2;
   background-color: #f7f7f9;
   position: fixed;
   width: 100%;
@@ -201,6 +202,7 @@ html {
   position: relative;
   background-image: url("/Img/cup-hd-wallpaper-laptop-tea-100738.jpg");
   background-attachment: fixed;
+  background-color: white;
   background-position: center;
   font-size: 50px;
   font-family: 'Raleway', sans-serif;
@@ -351,7 +353,7 @@ html {
 }
 
 .info input[type=text], .info select {
-  width: 60%;
+  width: 90%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -362,7 +364,7 @@ html {
 }
 
 .info input[type=submit] {
-  width: 60%;
+  width: 90%;
   background-color: #2196f3;
   color: white;
   padding: 14px 5px;
@@ -373,13 +375,13 @@ html {
 }
 
 .info textarea {
-  width: 60%;
+  width: 90%;
   height: 150px;
   padding: 15px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 15px;
   resize: none;
 }
 
@@ -406,21 +408,34 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px;
+  width: 600px;
+  margin: 0px;
 }
 
-.cc .c1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.fa-ul {
+  padding: 5px;
+}
+
+.fa-ul li {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.cc1 {
+  width: 400px;
+}
+
+.cc1 h {
+  font-size: 23px;
+}
+
+.cc1 p {
+  padding-left: 20px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -496,6 +511,12 @@ html {
     margin: 20px;
     background-color: #FFF;
     height: 285px;
+  }
+  .cc {
+    display: block;
+  }
+  .cc {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
