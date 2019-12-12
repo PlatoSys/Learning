@@ -376,9 +376,10 @@ html {
         .main_container{ 
         display: block;
         .content1 {
+            display: flex;
             padding: 0px;
             width: 100%;
-
+            justify-content: center;
             img {
                 width: 360px;
                 height: 360px;
@@ -386,6 +387,10 @@ html {
         }
         .content2 {
             padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2%;
             h {
                 text-align: center;
             }
@@ -398,7 +403,6 @@ html {
     }
 
     .features {
-
         display: block;
     }
     .inform {
@@ -409,9 +413,10 @@ html {
         width: 100%;
         height: 500px;
         margin: 0;
+        display: block;
+        align-items: center;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        height: 110%;
     
         .feature {
             border: 0.5px solid rgb(209, 209, 209);
@@ -422,7 +427,10 @@ html {
     }
     
 .cc {
-    display: block
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
