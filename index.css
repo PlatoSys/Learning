@@ -5,11 +5,6 @@ html {
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'Amaranth';
-}
-
-* h {
-  font-family: 'Amaranth';
 }
 
 .logo {
@@ -55,7 +50,6 @@ html {
 }
 
 .nav ul li a {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   padding: 13px;
   text-decoration: none;
   color: #212121;
@@ -67,12 +61,18 @@ html {
   transition: color 0.2s;
 }
 
-.container1, .container2 {
-  background-color: #f7f7f9;
+.top_padding {
+  height: 100px;
+  width: 100%;
 }
 
-.container1 .main_container, .container2 .main_container {
-  padding-top: 73px;
+.container1,
+.container2 {
+  padding-top: 15px;
+}
+
+.container1 .main_container,
+.container2 .main_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,33 +81,57 @@ html {
           justify-content: center;
 }
 
-.container1 .main_container .content1, .container2 .main_container .content1 {
-  padding-top: 100px;
-  padding-left: 0px;
+.container1 .main_container .content1,
+.container2 .main_container .content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container1 .main_container .content2, .container2 .main_container .content2 {
-  padding-top: 200px;
-  padding-left: 100px;
+.container1 .main_container .content2,
+.container2 .main_container .content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.container1 .main_container .content2 h, .container2 .main_container .content2 h {
+.container1 .main_container .content2 h,
+.container2 .main_container .content2 h {
   font-size: 50px;
-  font-family: 'Alfa Slab One';
 }
 
-.container1 .main_container .content2 p, .container2 .main_container .content2 p {
+.container1 .main_container .content2 p,
+.container2 .main_container .content2 p {
   font-size: 20px;
-  font-family: inherit;
+}
+
+.container1 {
+  background-color: #f7f7f9;
 }
 
 .button {
   background-color: #2196f3;
+  margin-top: 20px;
   border: none;
   color: white;
   padding: 10px 19px;
   border-radius: 100px;
-  margin: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -134,13 +158,11 @@ html {
 }
 
 .fhead h {
-  font-family: 'Asul';
   text-align: center;
   font-size: 50px;
 }
 
 .fhead p {
-  font-family: 'Asul';
   text-align: center;
   font-size: 15px;
 }
@@ -153,6 +175,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 15px;
+}
+
+.core {
+  padding-top: 15px;
+  background-color: #f7f7f9;
 }
 
 .ffooter {
@@ -174,9 +202,9 @@ html {
 .ffooter .feature {
   border: 0.5px solid white;
   margin: 0px;
-  width: 360px;
-  background-color: #FFF;
-  height: 285px;
+  width: 380px;
+  background-color: #fff;
+  height: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +237,6 @@ html {
 
 .ffooter .feature .inform h {
   font-size: 25px;
-  font-family: 'Asul';
 }
 
 .ffooter .feature .inform p {
@@ -224,7 +251,6 @@ html {
   background-color: white;
   background-position: center;
   font-size: 50px;
-  font-family: 'Raleway', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +367,8 @@ html {
   margin: 20px;
 }
 
-.submit input[type=text], .submit select {
+.submit input[type="text"],
+.submit select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -352,7 +379,7 @@ html {
           box-sizing: border-box;
 }
 
-.submit input[type=submit] {
+.submit input[type="submit"] {
   width: 100%;
   background-color: #2196f3;
   color: white;
@@ -363,7 +390,7 @@ html {
   cursor: pointer;
 }
 
-.submit input[type=submit]:hover {
+.submit input[type="submit"]:hover {
   background-color: #1b7fd1;
 }
 
@@ -380,7 +407,8 @@ html {
           flex-direction: column;
 }
 
-.info input[type=text], .info select {
+.info input[type="text"],
+.info select {
   width: 90%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -391,7 +419,7 @@ html {
           box-sizing: border-box;
 }
 
-.info input[type=submit] {
+.info input[type="submit"] {
   width: 90%;
   background-color: #2196f3;
   color: white;
@@ -428,7 +456,7 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 25px;
-  background-color: #444141;
+  background-color: #929292;
   padding: 20px;
 }
 
@@ -494,10 +522,12 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container1 .main_container, .container2 .main_container {
+  .container1 .main_container,
+  .container2 .main_container {
     display: block;
   }
-  .container1 .main_container .content1, .container2 .main_container .content1 {
+  .container1 .main_container .content1,
+  .container2 .main_container .content1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -507,11 +537,13 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container1 .main_container .content1 img, .container2 .main_container .content1 img {
+  .container1 .main_container .content1 img,
+  .container2 .main_container .content1 img {
     width: 360px;
     height: 360px;
   }
-  .container1 .main_container .content2, .container2 .main_container .content2 {
+  .container1 .main_container .content2,
+  .container2 .main_container .content2 {
     padding: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -525,10 +557,12 @@ html {
             align-items: center;
     padding: 2%;
   }
-  .container1 .main_container .content2 h, .container2 .main_container .content2 h {
+  .container1 .main_container .content2 h,
+  .container2 .main_container .content2 h {
     text-align: center;
   }
-  .container1 .main_container .content2 .button, .container2 .main_container .content2 .button {
+  .container1 .main_container .content2 .button,
+  .container2 .main_container .content2 .button {
     margin-left: 100px;
   }
   .features {
@@ -554,7 +588,7 @@ html {
   .ffooter .feature {
     border: 0.5px solid #d1d1d1;
     margin: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     height: 285px;
   }
   .cc1 {
